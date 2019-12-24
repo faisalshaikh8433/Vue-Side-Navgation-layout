@@ -1,0 +1,8 @@
+<div class="m-1 p-1 flex justify-start items-center">
+  <h1 class="text-xl font-bold">New Item</h1>
+  <div class="ml-auto">
+    <%= link_to 'Back', items_path, class: "p-2 font-bold bg-red-300 rounded" %>
+  </div>
+</div>
+
+<%= render 'form', item: @item %>

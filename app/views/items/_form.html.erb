@@ -1,0 +1,26 @@
+<%= form_with(model: item, local: true) do |form| %>
+  <% if item.errors.any? %>
+    <div class="m-1 p-1 font-bold text-red-600">
+      <h2><%= pluralize(item.errors.count, "error") %></h2>
+      <ul>
+        <% item.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class=" m-2">
+    <%= form.label :name, class: "font-bold mb-1" %>
+    <%= form.text_field :name, class:"w-2/4 h-8 p-1 text-md bg-gray-200 border-2 border-solid border-teal-300 rounded focus:outline-none", autofocus: true %>
+  </div>
+
+  <div class=" m-2">
+    <%= form.label :active, "Available", class: "font-bold" %>
+    <%= form.check_box :active %>
+  </div>
+
+  <div class="actions m-2">
+    <input type="submit" value="save" class="p-2 rounded bg-blue-400 hover:bg-black hover:text-white font-bold"/>
+  </div>
+<% end %>

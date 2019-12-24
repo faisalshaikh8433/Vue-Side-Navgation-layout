@@ -1,0 +1,16 @@
+<div id="notice" class="text-lg font-bold mb-5"><%= notice %></div>
+
+<div class="text-lg mb-5">
+  <strong class="mr-5">Name:</strong>
+  <%= @item.name %>
+</div>
+
+<div class="text-lg mb-3">
+  <strong class="mr-4">Available:</strong>
+  <%= @item.active ? "Yes" : "No" %>
+</div>
+
+<div class="pt-5">
+  <%= link_to 'Edit', edit_item_path(@item), class:"p-2 rounded bg-blue-400 hover:bg-black hover:text-white font-bold" %>
+  <%= link_to 'Back', items_path, class: "p-2 font-bold bg-red-300 rounded" %>
+</div>

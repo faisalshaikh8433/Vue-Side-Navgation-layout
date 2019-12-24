@@ -1,8 +1,8 @@
 <template>
   <nav>
     <div class="p-2 flex flex-col text-center pt-12">
-      <a class="hover:bg-white p-2 rounded" href="/">Home</a>
-      <a class="hover:bg-white p-2 rounded">Products</a>
+      <a class="font-bold p-2 rounded" href="/">Home</a>
+      <a class="p-2 rounded font-bold" href="/items">Items</a>
     </div>
   </nav>
 </template>

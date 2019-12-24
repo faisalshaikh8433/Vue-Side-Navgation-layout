@@ -11,11 +11,15 @@ require("css/application.scss");
 
 import Vue from "vue/dist/vue.esm";
 import App from "../app.vue";
+import TurbolinksAdapter from "vue-turbolinks";
+// Vue.use(TurbolinksAdapter);
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("turbolinks:load", () => {
   const app = new Vue({
     el: "#app",
-    components: { App }
+    components: {
+      App
+    }
   });
 });
 

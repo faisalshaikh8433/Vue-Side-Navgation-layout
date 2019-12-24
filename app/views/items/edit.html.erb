@@ -1,0 +1,9 @@
+<div class="m-1 p-1 flex justify-start items-center">
+  <h1 class="text-xl font-bold">Editing Item</h1>
+  <div class="ml-auto">
+    <%= link_to 'Show', @item, class: "p-2 rounded bg-green-400 hover:bg-black hover:text-white font-bold" %>
+    <%= link_to 'Back', items_path, class: "p-2 font-bold bg-red-300 rounded" %>
+  </div>
+</div>
+
+<%= render 'form', item: @item %>

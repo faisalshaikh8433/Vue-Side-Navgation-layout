@@ -1,1 +1,29 @@
-<div>I am index of dashboard</div>
+<div class="m-1 mb-2 p-1">
+  <h1 class="text-xl font-bold">
+    Dashboard
+  </h1>
+</div>
+<div class="m-1 p-1">
+  <p>
+    <h2 class="font-bold "><%= @items.count%> <%= "Item".pluralize(@items)%> are there.</h2>
+  </p>
+  <br>
+  <table class="table-auto">
+    <thead>
+      <tr class="border bg-gray-200">
+        <th class="px-4 py-2">Name</th>
+        <th class="px-4 py-2">Available</th>
+        <th class="px-4 py-2"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @items.each do |item| %>
+        <tr class="hover:bg-teal-200  font-bold">
+          <td class="border px-4 py-2"><%= item.name %></td>
+          <td class="border px-4 py-2"><%= item.active ? "Yes" : "No" %></td>
+          <td class="border px-4 py-2"><%= link_to 'Edit', edit_item_path(item),class: "p-2 rounded" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

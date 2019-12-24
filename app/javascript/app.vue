@@ -1,14 +1,14 @@
 <template>
-  <div id="app">
-    <Header @toggleNav="toggleDisplayValue" />
+  <div>
+    <Header class="shadow bg-gray-200 h-10" @toggleNav="toggleDisplayValue" />
     <div>
       <SideNav
-        class="w-64 h-full absolute overflow-x-hidden bg-gray-300 lg:block"
+        class="w-64 h-full absolute overflow-x-hidden bg-gray-200 lg:block"
         :class="showSideNav ? 'block' : 'hidden'"
       />
-      <Main class="p-4 bg-red-100 overflow-y-auto" :class="showSideNav ? 'ml-64' : 'ml-0'">
+      <main class="p-4 overflow-y-auto" :class="showSideNav ? 'ml-64' : 'ml-0'">
         <slot></slot>
-      </Main>
+      </main>
     </div>
   </div>
 </template>
@@ -16,12 +16,10 @@
 <script>
 import Header from "./packs/components/Header";
 import SideNav from "./packs/components/SideNav";
-import Main from "./packs/components/Main";
 export default {
   components: {
     Header,
-    SideNav,
-    Main
+    SideNav
   },
   data: function() {
     return {
@@ -35,4 +33,3 @@ export default {
   }
 };
 </script>
-
