@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Base layout with top navigation bar, side-navigation bar and responsive designed with vue js, tailwind css and rails. Rails yield which is in application.html.erb works same and render views in base layout component.
 
-Things you may want to cover:
+Note:- If needed route methods in the component use gem "js-routes".
 
-* Ruby version
+Dummy controller and model are used eg: Dashboard controllerm, Items Controller and Item Modal.
 
-* System dependencies
+Other Details:
+- Rails 6
+- Ruby 2.5.4
+- postgresql
 
-* Configuration
+clone or download and run the following:
+- bundle
+- yarn
+- db:create db:migrate
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
