@@ -6,7 +6,7 @@
         class="w-64 h-full absolute overflow-x-hidden bg-gray-200 lg:block"
         :class="showSideNav ? 'block' : 'hidden'"
       />
-      <main class="p-4 overflow-y-auto" :class="showSideNav ? 'ml-64' : 'ml-0'">
+      <main class="p-4 overflow-y-auto lg:ml-64" :class="showSideNav ? 'ml-64' : 'ml-0'">
         <router-view></router-view>
       </main>
     </div>

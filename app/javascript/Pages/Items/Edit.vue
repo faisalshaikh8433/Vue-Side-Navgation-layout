@@ -1,6 +1,6 @@
 <template>
   <PageLayout>
-    <template v-slot:heading>New Item</template>
+    <template v-slot:heading>Edit Item</template>
     <div class="m-1">
       <label>Name</label>
       <Input
