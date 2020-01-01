@@ -7,15 +7,15 @@
         :class="showSideNav ? 'block' : 'hidden'"
       />
       <main class="p-4 overflow-y-auto" :class="showSideNav ? 'ml-64' : 'ml-0'">
-        <slot></slot>
+        <router-view></router-view>
       </main>
     </div>
   </div>
 </template>
 
 <script>
-import Header from "./packs/components/Header";
-import SideNav from "./packs/components/SideNav";
+import Header from "./Header";
+import SideNav from "./SideNav";
 export default {
   components: {
     Header,

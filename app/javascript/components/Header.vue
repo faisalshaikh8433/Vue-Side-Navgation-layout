@@ -2,7 +2,7 @@
   <header>
     <div class="flex justify-center items-center">
       <div class="lg:m-3 w-64 text-center font-bold">
-        <p class="text-xl underline">Base Layout (Vue)</p>
+        <p class="text-xl underline">SPA</p>
       </div>
       <div class="ml-auto text-right">
         <button @click="$emit('toggleNav')" class="lg:hidden rounded-r hover:bg-red-200">

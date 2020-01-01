@@ -10,18 +10,37 @@ require("channels");
 require("css/application.scss");
 
 import Vue from "vue/dist/vue.esm";
-import App from "../app.vue";
-import TurbolinksAdapter from "vue-turbolinks";
+import Layout from "../components/Layout.vue";
+import routes from "../routes";
+import VueRouter from "vue-router";
+
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  routes
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const app = new Vue({
+    router,
+    render: h => h(Layout)
+  }).$mount();
+  document.body.appendChild(app.$el);
+
+  console.log(app);
+});
+// import TurbolinksAdapter from "vue-turbolinks";
 // Vue.use(TurbolinksAdapter);
 
-document.addEventListener("turbolinks:load", () => {
-  const app = new Vue({
-    el: "#app",
-    components: {
-      App
-    }
-  });
-});
+// document.addEventListener("turbolinks:load", () => {
+//   const app = new Vue({
+//     el: "#app",
+//     router,
+//     components: {
+//       Layout
+//     }
+//   });
+// });
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

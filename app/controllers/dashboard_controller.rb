@@ -1,7 +1,8 @@
 class DashboardController < ApplicationController
-
+  layout "spa"
+  
   def index
-    @items = Item.all
+    # @items = Item.all
   end
 
 end
