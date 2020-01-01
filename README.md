@@ -1,6 +1,8 @@
 # README
 
-Base layout with top navigation bar, side-navigation bar and responsive designed with vue js, tailwind css and rails. Rails yield which is in application.html.erb works same and render views in base layout component.
+# Rails Vue Spa
+
+Base layout with top navigation bar, side-navigation bar and responsive designed with vue js, tailwind css and rails.
 
 Note:- If needed route methods in the component use gem "js-routes".
 
