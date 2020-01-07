@@ -2,13 +2,13 @@
 
 # Rails Vue Spa
 
-Base layout with top navigation bar, side-navigation bar and responsive designed with vue js, tailwind css and rails.
+Base layout with top navigation bar, side-navigation bar and responsive designed with vue js, vue router, tailwind css.
 
-Note:- If needed route methods in the component use gem "js-routes".
-
-Dummy controller and model are used eg: Dashboard controllerm, Items Controller and Item Modal.
+Dummy controller and model are used eg: Dashboard controller, Items Controller and Item Modal.
 
 Other Details:
+- Vuejs
+- Vue Rooter
 - Rails 6
 - Ruby 2.5.4
 - postgresql
