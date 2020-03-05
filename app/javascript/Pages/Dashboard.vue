@@ -2,8 +2,8 @@
   <PageLayout>
     <template v-slot:heading>Dashboard</template>
     <p class="font-bold">There are {{ items.length }} items.</p>
-    <div class="table mt-5">
-      <table>
+    <div class="mt-5">
+      <table class="table-auto">
         <thead>
           <tr class="border bg-gray-200">
             <th class="px-4 py-2">Name</th>
